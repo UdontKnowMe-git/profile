@@ -1,24 +1,54 @@
 body {
     background-image: url('./resources/background.gif');
-    font-family: "Press Start 2P", "cursive";
+    font-family: "Press Start 2P";
+    overflow-y: scroll;
     color:aqua;
     display:flex;
+    flex-direction: column;
     justify-content: flex-start;
+    margin: 0;
+    padding: 0;
 }
 .name {
     color: aqua;
-    font-family: "Press Start 2P", "cursive";
-    margin: 10px;
-    padding-top: 10px;
+    margin: 20px;
+    padding-top: 50px;
+    text-align: left; 
+}
+
+.name h1 {
+    margin: 0;
+    font-size: 2rem; 
+}
+
+.name p {
+    margin-top: 10px; 
+    font-size: 1.2rem;
 }
 .navbar-main {
     position: fixed;
     top: 0;
     width: 100%;
     height: 5%;
-    margin: auto;
-    padding-left: -10px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-image: url('./resources/navbar-background.png');
-
+}
+.navbar-links {
+    list-style-type: none;
+    font-size: 14px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar-links a{
+    color: rgb(5, 255, 97);
+    text-decoration: none;
+    padding: 5px;
+}
+.navbar-links a:hover{
+    text-decoration: underline;
 }
