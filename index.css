@@ -1,54 +1,54 @@
 body {
     background-image: url('./resources/background.gif');
-    font-family: "Press Start 2P";
-    overflow-y: scroll;
-    color:aqua;
     display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.name {
-    color: aqua;
-    margin: 20px;
-    padding-top: 50px;
-    text-align: left; 
+.container {
+    padding-top: 20px;
+    width: 40%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 1%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.315);
 }
-
-.name h1 {
-    margin: 0;
-    font-size: 2rem; 
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Increase the width on very small screens */
+    }
 }
-
-.name p {
-    margin-top: 10px; 
-    font-size: 1.2rem;
-}
-.navbar-main {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 5%;
-    margin-left: 0px;
+.profile-picture {
     display: flex;
+    padding: 2em;
     justify-content: center;
     align-items: center;
-    background-image: url('./resources/navbar-background.png');
+    margin: 0 auto;
+    background-image: linear-gradient(rgb(15, 12, 37), rgb(8, 58, 74))
 }
-.navbar-links {
-    list-style-type: none;
-    font-size: 14px;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: space-around;
+.profile-picture img{
+    width: 7em;
+    height: 7em;
+    border-radius: 10%;
+    box-shadow: 0 0.6em 1.8em;
+    object-fit: cover;
 }
-.navbar-links a{
-    color: rgb(5, 255, 97);
-    text-decoration: none;
-    padding: 5px;
+.profile {
+    color: rgb(49, 149, 226);
+    margin: 20px;
+    text-align: center; 
+    font-family: "Press Start 2P";
 }
-.navbar-links a:hover{
-    text-decoration: underline;
+
+.profile h2 {
+    font-size: 1.5em;
+}
+.profile p {
+    font-size: 1em;
+    font-family: "Share Tech", sans-serif;
 }
