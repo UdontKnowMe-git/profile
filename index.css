@@ -16,7 +16,9 @@ body {
     margin: 0 auto;
     border-radius: 1%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: rgba(22, 21, 27, 0.817);
+    border: 1px solid gold; 
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.8);
 }
 @media (max-width: 600px) {
     .container {
@@ -51,4 +53,28 @@ body {
 .profile p {
     font-size: 1em;
     font-family: "Share Tech", sans-serif;
+}
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color:rgb(162, 162, 162);
+    transition: color 0.5s, transform 0.3s;
+    font-size: 1.5em;
+}
+
+.git:hover {
+    color: #1e1e1e;
+    transform: scale(2,2);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.linkedin:hover {
+    color: #0400fdd7;
+    transform: scale(2,2);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.986);
+}
+.insta:hover {
+    color: #ff4665;
+    transform: scale(2,2);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
