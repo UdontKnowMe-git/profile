@@ -1,0 +1,59 @@
+Tomorrow's Task: (WEB DEV)
+
+Requirements
+-Basic HTML structure with divs and img tags.
+-Basic CSS for layout, text styling, colors, and positioning.
+
+Task: Create a Personal Profile Card
+
+Set up HTML Structure:
+
+Create a container div with a class like .profile-card.
+Add an img tag for the profile picture.
+Add h2 and p elements for the name and bio.
+Include a tags for social media links.
+
+Task 1 - Selectors:
+
+Use class selectors (e.g., .profile-card) to apply styles to specific elements.
+Utilize descendant selectors to style elements within .profile-card (e.g., .profile-card h2).
+
+Task 2 - Text and Font Styling:
+
+Use CSS properties like font-family, font-size, color, and text-align to style the name and bio text.
+Center-align text and adjust font sizes to make the profile card visually appealing.
+
+Task 3 - Box Model and Spacing:
+
+Add padding and margins to space elements inside and outside the card.
+Use border-radius on the card and image to create rounded corners.
+
+Task 4 - Colors and Backgrounds:
+
+Set a background color for the card and adjust text colors for readability.
+Use a soft color palette to keep the profile card visually pleasing.
+
+Task 5 - Positioning (Relative and Absolute):
+
+Position elements (like social media links) within the card.
+Use position: relative for the card and position: absolute for icons, aligning them to the bottom of the card.
+
+Task 6 - Responsive Layouts with Flexbox:
+
+Use Flexbox for layout adjustments, such as aligning the profile picture and text.
+Use display: flex to vertically center items within the profile card.
+
+Task 7 - Styling Links and Buttons:
+
+Style social media links to appear as buttons using background-color, padding, and border-radius.
+Add hover effects to change button colors on mouse hover.
+
+Task 8 - CSS Grid for Layouts:
+
+For smaller screens, use CSS Grid to stack elements (like social links below the bio).
+Use media queries to adjust layout based on screen size.
+
+Task 9 - Transitions and Hover Effects:
+
+Add hover effects with transition to scale or change colors smoothly when hovering over the social media links.
+This effect makes interactions feel more polished.

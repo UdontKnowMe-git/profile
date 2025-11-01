@@ -1,0 +1,95 @@
+body {
+    background-image: url('./resources/background.gif');
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    padding-top: 20px;
+    width: 40%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 1%;
+    padding: 20px;
+    background-color: rgba(22, 21, 27, 0.817);
+    border: 1px solid rgb(0, 255, 238); 
+    box-shadow: 0 0 5px rgba(0, 254, 152, 0.8);
+}
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Increase the width on very small screens */
+    }
+}
+.profile-picture {
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-image: linear-gradient(rgb(15, 12, 37), rgb(8, 58, 74))
+}
+.profile-picture img{
+    width: 7em;
+    height: 7em;
+    border-radius: 10%;
+    box-shadow: 0 0.6em 1.8em;
+    object-fit: cover;
+}
+.profile {
+    color: rgb(49, 149, 226);
+    margin: 20px;
+    text-align: center; 
+    font-family: "Press Start 2P";
+}
+
+.profile h2 {
+    font-size: 1.5em;
+}
+.profile p {
+    font-size: 1.2em;
+    font-family: "Share Tech", sans-serif;
+}
+.social-links {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1px;
+    justify-items: center; 
+    align-items: center; 
+}
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color:rgb(162, 162, 162);
+    transition: color 0.5s, transform 0.3s;
+    font-size: 1.5em;
+}
+
+.git:hover {
+    color: #1e1e1e;
+    transform: scale(2,2);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.linkedin:hover {
+    color: #0400fdd7;
+    transform: scale(2,2);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.986);
+}
+.insta:hover {
+    color: #ff4665;
+    transform: scale(2,2);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 600px) {
+    .social-links {
+        grid-template-columns: 1fr;
+    }
+}
+.profile .bio {
+    font-size: 1em;
+}
