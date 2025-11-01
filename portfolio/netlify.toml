@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Single Page App fallback so deep links work
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
