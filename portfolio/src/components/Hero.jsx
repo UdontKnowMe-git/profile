@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
+import { Github, Instagram, Linkedin } from "lucide-react";
 
 export default function Hero() {
   const initParticles = useCallback(async (engine) => {
@@ -81,11 +82,42 @@ export default function Hero() {
           />
         </div>
 
-        <div className="mt-6 flex gap-4">
-          <a href="#projects" className="px-5 py-2.5 rounded-md bg-cyan-600 hover:bg-cyan-500 transition">View Projects</a>
-          <a href="https://github.com/UdontKnowMe-git" target="_blank" rel="noreferrer" className="px-5 py-2.5 rounded-md bg-white/10 hover:bg-white/20 border border-white/10 transition">
-            GitHub
+        {/* Actions row */}
+        <div className="mt-6 flex items-center gap-4">
+          <a href="#projects" className="px-5 py-2.5 rounded-md bg-cyan-600 hover:bg-cyan-500 transition">
+            View Projects
           </a>
+
+          {/* Social icons */}
+          <div className="flex items-center gap-2">
+            <a
+              href="https://github.com/UdontKnowMe-git"
+              target="_blank"
+              rel="noreferrer"
+              className="group size-10 grid place-items-center rounded-lg border border-white/10 bg-white/10 hover:bg-white/20 transition will-change-transform hover:-translate-y-0.5 hover:shadow-[0_0_24px_rgba(34,211,238,0.25)]"
+              title="GitHub"
+            >
+              <Github size={18} className="text-white group-hover:text-cyan-300 transition" />
+            </a>
+            <a
+              href="https://instagram.com/udontknowme_git/"
+              target="_blank"
+              rel="noreferrer"
+              className="group size-10 grid place-items-center rounded-lg border border-white/10 bg-white/10 hover:bg-white/20 transition will-change-transform hover:-translate-y-0.5 hover:shadow-[0_0_24px_rgba(244,114,182,0.25)]"
+              title="Instagram"
+            >
+              <Instagram size={18} className="text-white group-hover:text-fuchsia-300 transition" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/hariram-s-01a98b292/"
+              target="_blank"
+              rel="noreferrer"
+              className="group size-10 grid place-items-center rounded-lg border border-white/10 bg-white/10 hover:bg-white/20 transition will-change-transform hover:-translate-y-0.5 hover:shadow-[0_0_24px_rgba(34,211,238,0.25)]"
+              title="LinkedIn"
+            >
+              <Linkedin size={18} className="text-white group-hover:text-cyan-300 transition" />
+            </a>
+          </div>
         </div>
       </div>
 

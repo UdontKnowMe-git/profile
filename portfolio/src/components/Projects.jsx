@@ -17,8 +17,8 @@ const teamHackathons = [
   },
   {
     title: "wiseeyou",
-    desc: "Safety/awareness application prototype created with the team during a fast‑paced hackathon.",
-    tags: ["Hackathon", "Prototype", "ESP32", "Team"],
+    desc: "Motion/Gesture detection prototype able to detect Wifi CSI signals created with the team",
+    tags: ["ML", "Prototype", "ESP32", "Team"],
     link: "https://github.com/M-Arjun-07/wiseeyou"
   },
   {

@@ -1,5 +1,6 @@
 // src/components/AboutTerminal.jsx
 import { useEffect, useMemo, useRef, useState } from "react";
+import { BIO } from "../data/profile";
 
 const HELP = `Available commands:
 - help                Show this help
@@ -84,7 +85,9 @@ Full‑stack tinkerer • Python/JS enthusiast`,
       const evt = new CustomEvent("trigger-easter-egg");
       window.dispatchEvent(evt);
       return "Initializing secret protocol… 🕹️";
-    }
+    },
+    bio: () => BIO,
+    about: () => BIO,
   }), []);
 
   useEffect(() => {

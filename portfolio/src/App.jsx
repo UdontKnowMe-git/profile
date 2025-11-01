@@ -10,6 +10,7 @@ import useReveal from "./components/useReveal";
 import useCustomCursor from "./components/useCustomCursor";
 import Stats from "./components/Stats";
 import ContributionHeatmap from "./components/ContributionHeatmap";
+import BioSkills from "./components/BioSkills";
 
 function App() {
   useCustomCursor();
@@ -37,7 +38,9 @@ function App() {
         <h2 className="text-3xl font-bold mb-6 text-cyan-300">About</h2>
         <AboutTerminal />
       </section>
-
+      
+      {/* Bio & Skills */}
+      <BioSkills />
 
       {/* Projects */}
       <section id="projects" className="px-6 md:px-12 lg:px-20 py-20 reveal">
