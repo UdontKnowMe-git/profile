@@ -11,6 +11,7 @@ import useCustomCursor from "./components/useCustomCursor";
 import Stats from "./components/Stats";
 import ContributionHeatmap from "./components/ContributionHeatmap";
 import BioSkills from "./components/BioSkills";
+import Timeline from "./components/Timeline";
 
 function App() {
   useCustomCursor();
@@ -41,6 +42,9 @@ function App() {
       
       {/* Bio & Skills */}
       <BioSkills />
+
+      {/* Timeline */}
+      <Timeline />
 
       {/* Projects */}
       <section id="projects" className="px-6 md:px-12 lg:px-20 py-20 reveal">

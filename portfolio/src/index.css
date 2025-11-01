@@ -87,3 +87,16 @@ html, body { cursor: none; }
 
 /* Optional: keep text inputs using I‑beam cursor instead of hidden cursor */
 input, textarea { cursor: text; }
+
+@keyframes spinIn {
+  0% { transform: scale(0.6) rotate(-30deg); opacity: 0; }
+  40% { transform: scale(1.05) rotate(360deg); opacity: 1; }
+  70% { transform: scale(1) rotate(540deg); opacity: 1; }
+  100% { transform: scale(0.98) rotate(720deg); opacity: 0; }
+}
+@keyframes fade {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}

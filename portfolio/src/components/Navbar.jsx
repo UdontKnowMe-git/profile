@@ -1,13 +1,14 @@
 // src/components/Navbar.jsx
 import { useEffect, useState } from "react";
-import { Home, User, FolderGit2, Mail, Menu, BookOpenCheck } from "lucide-react";
+import { Home, User, FolderGit2, Mail, Menu, BookOpenCheck, Clock } from "lucide-react";
 
 const links = [
   { href: "#home", label: "Home", Icon: Home },
   { href: "#about", label: "About", Icon: User },
-  { href: "#bio", label: "Bio", Icon: BookOpenCheck },   // new
+  { href: "#bio", label: "Bio", Icon: BookOpenCheck },
+  { href: "#timeline", label: "Timeline", Icon: Clock },
   { href: "#projects", label: "Projects", Icon: FolderGit2 },
-  { href: "#contact", label: "Contact", Icon: Mail }
+  { href: "#contact", label: "Contact", Icon: Mail },
 ];
 
 export default function Navbar() {
