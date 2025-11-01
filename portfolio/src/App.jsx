@@ -5,6 +5,7 @@ import AboutTerminal from "./components/AboutTerminal";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 // import "./App.css";
+// App.css is no longer needed as Tailwind CSS is used
 import useReveal from "./components/useReveal";
 import useCustomCursor from "./components/useCustomCursor";
 import Stats from "./components/Stats";

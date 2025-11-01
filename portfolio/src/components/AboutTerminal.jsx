@@ -42,7 +42,8 @@ Full‑stack tinkerer • Python/JS enthusiast`,
         github: "https://github.com/UdontKnowMe-git",
         linkedin: "https://www.linkedin.com/in/hariram-s-01a98b292/",
         instagram: "https://www.instagram.com/udontknowme_git/",
-        discord: "https://discordapp.com/users/679200590353399839"
+        discord: "https://discordapp.com/users/679200590353399839",
+        email: "hariram.s2399@gmail.com"
       };
 
       // open a specific social if passed (e.g., "socials github")
@@ -59,6 +60,7 @@ Full‑stack tinkerer • Python/JS enthusiast`,
         `- LinkedIn   — ${links.linkedin}`,
         `- Instagram  — ${links.instagram}`,
         `- Discord    — ${links.discord}`,
+        `- Email      — ${links.email}`,
         "",
         'Tip: type "socials github" (or linkedin/instagram/discord) to open directly.'
       ].join("\n");

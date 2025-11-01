@@ -56,21 +56,10 @@ export default function Stats() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <img
-          src="https://github-readme-stats.vercel.app/api?username=UdontKnowMe-git&show_icons=true&theme=tokyonight&hide_title=true&hide_border=true&cache_seconds=7200"
-          alt="GitHub stats"
-          className="w-full rounded-xl border border-white/10 bg-black/40"
-          loading="lazy"
-        />
+        <img></img>
         <img
           src="https://streak-stats.demolab.com?user=UdontKnowMe-git&theme=tokyonight&hide_border=true&card_width=420"
           alt="GitHub Streak"
-          className="w-full rounded-xl border border-white/10 bg-black/40"
-          loading="lazy"
-        />
-        <img
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=UdontKnowMe-git&layout=compact&theme=tokyonight&hide_title=true&hide_border=true&langs_count=8&cache_seconds=7200"
-          alt="Top Languages"
           className="w-full rounded-xl border border-white/10 bg-black/40"
           loading="lazy"
         />
