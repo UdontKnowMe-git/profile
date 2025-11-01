@@ -3,7 +3,7 @@
 Neon‑glass, minimal, and fast portfolio built with Vite + React, featuring an interactive hero sandbox, console‑style About, iconographic Skills, a graphic Timeline, and playful Easter eggs.
 
 ## Live
-
+https://hariram-s.netlify.app/
 - Deployed on Netlify (clean URLs, SPA fallback).
 - Public assets (images, PDFs) served from /public.
 
