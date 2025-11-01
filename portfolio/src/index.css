@@ -1,71 +1,89 @@
+/* index.css */
+
+/* Tailwind layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Base layout */
+html, body, #root {
+  height: 100%;
+  background: transparent; /* let your fixed GIF show through */
+}
+html { scroll-behavior: smooth; }
+body { margin: 0; min-height: 100vh; }
+
+/* Section reveal animation */
+.reveal { opacity: 0; transform: translateY(12px); transition: all .6s ease; }
+.reveal.show { opacity: 1; transform: none; }
+
+/* Typewriter cursor tint (used by typewriter-effect options.cursor) */
+.typewriter-caret { border-right: 2px solid rgba(34,211,238,0.9); }
+
+/* Scrollbar theme (dark track, neon thumb) */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --scrollbar-bg: rgba(10, 10, 12, 0.979);               /* darker track */
+  --scrollbar-thumb: rgba(34, 211, 238, 0.75);          /* cyan */
+  --scrollbar-thumb-hover: rgba(167, 139, 250, 0.9);    /* violet */
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+/* WebKit (Chrome/Edge/Safari) */
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg) !important;
+  border-radius: 9999px;
+}
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--scrollbar-thumb), var(--scrollbar-thumb-hover));
+  border-radius: 9999px;
+  border: 2px solid rgba(0,0,0,0.35);
+  box-shadow: 0 0 10px rgba(34,211,238,0.35);
+}
+*::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 14px rgba(167,139,250,0.5);
+}
+*::-webkit-scrollbar-corner {
+  background: var(--scrollbar-bg) !important;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Custom glowing cursor */
+/* Hide default cursor sitewide (optional) */
+html, body { cursor: none; }
+
+/* Cursor nodes (placed in App.jsx) */
+#cursor-dot, #cursor-ring {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Small inner dot */
+#cursor-dot {
+  width: 6px; height: 6px; border-radius: 9999px;
+  background: #22d3ee; /* cyan-400 */
+  box-shadow: 0 0 12px rgba(34,211,238,0.9);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Outer ring with soft glow */
+#cursor-ring {
+  width: 28px; height: 28px; border-radius: 9999px;
+  border: 2px solid rgba(34,211,238,0.7);
+  box-shadow: 0 0 22px rgba(167,139,250,0.35);
+  transition: transform .15s ease, border-color .2s ease, width .2s ease, height .2s ease;
 }
+
+/* Enlarge/tint ring over clickable elements (handled by JS adding .cursor-hover on <html>) */
+.cursor-hover #cursor-ring {
+  width: 42px; height: 42px;
+  border-color: rgba(167,139,250,0.9);
+}
+
+/* Optional: keep text inputs using I‑beam cursor instead of hidden cursor */
+input, textarea { cursor: text; }
