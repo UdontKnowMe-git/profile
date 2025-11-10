@@ -11,7 +11,7 @@ https://hariram-s.netlify.app/
 
 ### Interactive hero sandbox
 - Idle particles that react to hover/touch.
-- Secret Easter egg: tap/click the hero sandbox 10 times to reveal a spinning oii.ai cat that fades out.
+- Secret Easter egg: tap/click the hero sandbox 10 times to find out
 - Pointer trails: neon orbs gently float and fade along the cursor path.
 
 ### Bio + Skills
