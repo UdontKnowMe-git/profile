@@ -55,3 +55,5 @@ https://hariram-s.netlify.app/
 - public/media/oiiai-cat.gif — Easter egg asset
 - netlify.toml — build/publish settings + SPA fallback
 - index.html — favicon and meta tags
+
+Todo: Add a light mode for the site
