@@ -56,4 +56,3 @@ https://hariram-s.netlify.app/
 - netlify.toml — build/publish settings + SPA fallback
 - index.html — favicon and meta tags
 
-Todo: Add a light mode for the site
