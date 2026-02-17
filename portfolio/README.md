@@ -1,6 +1,6 @@
 # Hari Ram S — Portfolio
 
-Neon‑glass, minimal, and fast portfolio built with Vite + React, featuring an interactive hero sandbox, console‑style About, iconographic Skills, a graphic Timeline, and playful Easter eggs.
+Neon‑glass, minimal, and fast portfolio built with Vite + React, featuring an interactive hero sandbox, console‑style About, iconographic Skills, a graphic Timeline, and a playful Easter egg.
 
 ## Live
 
