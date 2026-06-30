@@ -132,7 +132,7 @@ export default function BioSkills() {
 
         <SectionRow title="Programming Languages">
           {LANGUAGES.map((slug) => (
-            <DevLogo key={slug} name={slug} title={LABELS[slug] || slug.toUpperCase()} hover={hover} />
+            <DevLogo key={slug} name={slug} title={LABELS[slug] || (slug.charAt(0).toUpperCase() + slug.slice(1))} hover={hover} />
           ))}
         </SectionRow>
 

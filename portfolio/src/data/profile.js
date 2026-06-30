@@ -18,12 +18,22 @@ export const TOOLS = [
 
 // Human‑readable labels for hover titles (only if you want custom)
 export const LABELS = {
+  java: "Java",
+  javascript: "JavaScript",
+  typescript: "TypeScript",
+  python: "Python",
+  go: "Go",
+  c: "C",
   cplusplus: "C++",
   html5: "HTML5",
   css3: "CSS3",
+  react: "React",
   nextjs: "Next.js",
   tailwindcss: "Tailwind CSS",
-  mysql: "MySQL"
+  mysql: "MySQL",
+  selenium: "Selenium",
+  linux: "Linux",
+  git: "Git"
 };
 
 // Lucide‑backed skills (concepts that don’t have Devicon logos or where text-less icons aren’t clear)
