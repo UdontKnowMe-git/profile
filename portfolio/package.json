@@ -30,6 +30,12 @@
     "globals": "^16.4.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.13",
-    "vite": "^7.1.7"
+    "vite": "^7.3.6"
+  },
+  "allowScripts": {
+    "@tsparticles/engine@3.9.1": true,
+    "esbuild@0.28.1": true,
+    "react-tsparticles@2.12.2": true,
+    "tsparticles-engine@2.12.0": true
   }
 }
