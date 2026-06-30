@@ -88,12 +88,20 @@ export default function BioSkills() {
         {/* Split: text left, photo right */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
           {/* Text */}
-          <div className="md:col-span-3">
-            <p className="text-base md:text-lg leading-7 md:leading-8">
+          <div className="md:col-span-3 text-base md:text-lg leading-7 md:leading-8 text-gray-200">
+            <p className="mb-4">
               <span className="bg-gradient-to-r from-gray-100 via-cyan-200 to-gray-100 bg-clip-text text-transparent">
-                {BIO}
+                {BIO.intro}
               </span>
             </p>
+            <ul className="space-y-3 list-disc pl-5">
+              {BIO.points.map((pt, i) => (
+                <li key={i} className="text-gray-300">
+                  <strong className="text-cyan-300">{pt.label}:</strong>{" "}
+                  {pt.text}
+                </li>
+              ))}
+            </ul>
           </div>
 
 

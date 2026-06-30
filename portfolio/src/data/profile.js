@@ -1,9 +1,12 @@
 // src/data/profile.js
-export const BIO = `I am a passionate programmer, Programming started as a hobby for me, which I have now developed as a strong skill. I am currently a student at VIT-AP studying for a Bachelor's in Technology in Computer Science and Engineering.
-
-I have a strong background in Python programming, development, designing, and testing. I am also knowledgeable in web development and have a good knowledge of Javascript and CSS. I often use the React framework for my projects. Other languages I can work with are Java, GO, and Typescript.
-
-I am also an electronics hobbyist and love to tinker around and create stuff with microcontrollers in my free time, my other hobbies include chess, circuit building, and sports.`;
+export const BIO = {
+  intro: "I am a passionate programmer. Programming started as a hobby for me, which I have now developed into a strong skill. I am currently a student at VIT-AP studying for a Bachelor's in Technology in Computer Science and Engineering.",
+  points: [
+    { label: "Backend & Systems", text: "I have a strong background in Python programming, development, designing, and testing. Other languages I can work with include Java, GO, and Typescript." },
+    { label: "Frontend Development", text: "I am experienced in building responsive interfaces using JavaScript, CSS, and the React framework." },
+    { label: "Hardware & Hobbies", text: "Beyond software, I am an electronics hobbyist who loves to tinker with microcontrollers, build circuits, play chess, and engage in sports." }
+  ]
+};
 
 export const LANGUAGES = [
   "java", "javascript", "typescript", "python", "go", "c", "cplusplus", "html5", "css3"
@@ -35,6 +38,6 @@ export const SKILL_CONCEPTS = [
   "Artificial Intelligence (AI)",
   "Machine Learning (ML)",
   "Networking",
-  "Linux" 
+  "Linux"
 ];
 export const SKILLS = [...LANGUAGES, ...TOOLS, ...SKILL_CONCEPTS];

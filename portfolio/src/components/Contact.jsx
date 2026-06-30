@@ -4,14 +4,14 @@ import { useState } from "react";
 export default function Contact() {
   const [state, setState] = useState({ loading: false, ok: false, err: "" });
 
-  const FORMSPREE_ENDPOINT = "https://formspree.io/f/mkgppvly"; // <-- replace
-  
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/mkgppvly";
+
   const USE_WEB3FORMS = false;
   const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY;
 
   async function onSubmit(e) {
     e.preventDefault();
-    const form = e.currentTarget;           // capture before awaits
+    const form = e.currentTarget;
     const fd = new FormData(form);
 
     setState({ loading: true, ok: false, err: "" });
