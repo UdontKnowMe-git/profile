@@ -126,6 +126,7 @@ export const TIMELINE = [
     date: "Jun 2024",
     title: "morse.py",
     brand: "/brands/github.png",
+    href: "https://github.com/UdontKnowMe-git/morse-py",
     description: "Tiny Morse code encoder/decoder utility."
   }
 ];
