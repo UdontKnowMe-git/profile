@@ -29,15 +29,34 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top brand bar (minimal) */}
-      <header className="fixed top-0 left-0 right-0 z-30 backdrop-blur bg-black/30 border-b border-white/10">
+      {/* Top brand bar (modern header) */}
+      <header className="fixed top-0 left-0 right-0 z-30 backdrop-blur-md bg-black/40 border-b border-white/10">
         <div className="max-w-7xl mx-auto h-16 px-4 md:px-8 flex items-center justify-between">
-          <a href="#home" className="text-lg font-extrabold tracking-wide">
-            <span className="text-cyan-400">HariRam S</span>
+          <a href="#home" className="text-lg font-extrabold tracking-wide flex items-center gap-2 group">
+            <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_rgba(34,211,238,0.8)]" />
+            <span className="text-cyan-300 font-mono group-hover:text-white transition">&lt;HariRam /&gt;</span>
           </a>
 
-          {/* Hamburger for mobile / also available on desktop */}
-          <button onClick={() => setOpen(true)} aria-label="Open menu" className="relative size-10 grid place-items-center rounded-lg border border-white/10 bg-white/10 hover:bg-white/20 transition">
+          {/* Modern Desktop Navigation (PCs / Big screens) */}
+          <nav className="hidden md:flex items-center gap-1 bg-white/5 px-3 py-1.5 rounded-full border border-white/10 backdrop-blur-lg shadow-lg">
+            {links.map(({ href, label, Icon }) => (
+              <a
+                key={href}
+                href={href}
+                className="flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium text-gray-300 hover:text-white hover:bg-cyan-500/20 hover:border-cyan-500/30 border border-transparent transition duration-200"
+              >
+                <Icon size={14} className="text-cyan-400" />
+                <span>{label}</span>
+              </a>
+            ))}
+          </nav>
+
+          {/* Hamburger for mobile ONLY */}
+          <button
+            onClick={() => setOpen(true)}
+            aria-label="Open menu"
+            className="md:hidden relative size-10 grid place-items-center rounded-lg border border-white/10 bg-white/10 hover:bg-white/20 transition"
+          >
             <Menu size={20} />
           </button>
         </div>

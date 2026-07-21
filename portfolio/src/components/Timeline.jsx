@@ -1,12 +1,17 @@
 import { TIMELINE } from "../data/timeline";
-import { ExternalLink, FileDown } from "lucide-react";
+import { ExternalLink, FileDown, Globe } from "lucide-react";
 import { useRef, useEffect } from "react";
 
 // Small coin with brand image
 function BrandCoin({ src, alt }) {
+  const isGlobe = src === "globe" || !src;
   return (
-    <div className="relative size-12 rounded-xl border border-white/10 bg-white/5 shadow-[0_0_18px_rgba(34,211,238,0.15)]">
-      <img src={src} alt={alt} className="w-full h-full object-contain p-2" />
+    <div className="relative size-12 rounded-xl border border-white/10 bg-white/5 shadow-[0_0_18px_rgba(34,211,238,0.15)] flex items-center justify-center">
+      {isGlobe ? (
+        <Globe className="w-5 h-5 text-cyan-300" />
+      ) : (
+        <img src={src} alt={alt} className="w-full h-full object-contain p-2" />
+      )}
       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-white/10" />
     </div>
   );
@@ -58,7 +63,7 @@ function ItemCard({ item }) {
                 className="inline-flex items-center gap-1 text-xs px-2 py-1 rounded-md border border-white/10 bg-white/5 hover:bg-white/10 transition"
               >
                 <ExternalLink size={14} />
-                GitHub
+                {item.linkLabel || (item.href.includes("github.com") ? "GitHub" : "Visit Site")}
               </a>
             )}
           </div>

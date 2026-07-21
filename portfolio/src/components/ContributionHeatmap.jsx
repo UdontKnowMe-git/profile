@@ -99,16 +99,16 @@ export default function ContributionHeatmap({ login = "UdontKnowMe-git" }) {
         </div>
       )}
 
-      <div className="flex items-center justify-between mb-3">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-2 mb-3 text-center sm:text-left">
         <h4 className="text-cyan-300 font-semibold">Contribution Heatmap</h4>
         <div className="text-sm text-gray-400">{total ? `${total} contributions in the last year` : "…"}</div>
       </div>
 
-      <div className="w-full rounded-lg bg-neutral-900/80 p-3 overflow-x-auto">
+      <div className="mx-auto w-fit max-w-full rounded-lg bg-neutral-900/80 p-3 overflow-x-auto no-scrollbar">
         {error ? (
-          <div className="text-sm text-gray-400">Couldn’t load contributions. Please refresh later.</div>
+          <div className="text-sm text-gray-400 text-center">Couldn’t load contributions. Please refresh later.</div>
         ) : (
-          <div className="flex gap-1">
+          <div className="flex gap-1 justify-center min-w-max">
             {weeks.map((w, wi) => (
               <div key={wi} className="grid gap-1" style={{ gridTemplateRows: "repeat(7, 12px)" }}>
                 {w.contributionDays.map((d, di) => {
@@ -131,7 +131,7 @@ export default function ContributionHeatmap({ login = "UdontKnowMe-git" }) {
         )}
       </div>
 
-      <div className="mt-3 flex items-center gap-2 text-xs text-gray-500">
+      <div className="mt-3 flex items-center justify-center gap-2 text-xs text-gray-500">
         <span>Less</span>
         <div className="flex gap-1">
           {legend.map(l => (

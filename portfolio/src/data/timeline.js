@@ -1,5 +1,15 @@
 export const TIMELINE = [
   {
+    id: "proj-election-ed",
+    kind: "project",
+    date: "May 2026",
+    title: "Election Ed",
+    brand: "globe",
+    href: "https://election-ed.netlify.app",
+    description: "An educational platform about the Indian government featuring an accessibility tray, latest news, and an interactive timeline.",
+    linkLabel: "Visit Site"
+  },
+  {
     id: "proj-profile",
     kind: "project",
     date: "Nov 2025",

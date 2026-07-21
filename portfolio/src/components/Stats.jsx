@@ -155,11 +155,11 @@ export default function Stats() {
         <Card label="Latest Push" value={data.latest || "—"} />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
         <img
           src="https://github-readme-stats.vercel.app/api?username=UdontKnowMe-git&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true"
           alt="GitHub Stats"
-          className="w-full rounded-xl border border-white/10 bg-black/40 min-h-[190px] object-cover"
+          className="w-full rounded-xl border border-white/10 bg-black/40 h-auto object-contain"
           loading="lazy"
           onError={(e) => {
             e.currentTarget.onerror = null;

@@ -7,6 +7,14 @@ export default function useCustomCursor() {
     const ring = document.getElementById("cursor-ring");
     if (!dot || !ring) return;
 
+    // Check if the device is a touch screen (coarse pointer)
+    const isTouch = window.matchMedia("(pointer: coarse)").matches || ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+    if (isTouch) {
+      dot.style.display = "none";
+      ring.style.display = "none";
+      return;
+    }
+
     let x = window.innerWidth / 2, y = window.innerHeight / 2;
     let rx = x, ry = y; // ring lags behind dot
     const lag = 0.1;
