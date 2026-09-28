@@ -148,16 +148,16 @@ export default function Stats() {
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <Card label="Followers" value={data.followers} />
         <Card label="Public Repos" value={data.repos} />
         <Card label="Total Stars" value={data.stars} />
         <Card label="Latest Push" value={data.latest || "—"} />
-      </div>
+      </div> needs fixing*/}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
         <img
-          src="https://github-readme-stats.vercel.app/api?username=UdontKnowMe-git&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true"
+          src="https://github-stats-extended.vercel.app/api?username=UdontKnowMe-git&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117"
           alt="GitHub Stats"
           className="w-full rounded-xl border border-white/10 bg-black/40 h-auto object-contain"
           loading="lazy"
